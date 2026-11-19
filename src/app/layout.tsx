@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PANO.gr — Πόσο ψηλά μπορεί να φτάσει;",
+  title: "1euro.gr — Πόσο ψηλά μπορεί να φτάσει;",
   description:
     "Ο 1ος πλήρωσε 1€. Κάθε επόμενος πληρώνει 1€ παραπάνω και παίρνει την #1 θέση στην κορυφή του leaderboard.",
 };

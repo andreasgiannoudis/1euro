@@ -1,116 +1,64 @@
 @use '../../styles/variables' as *;
 
+
 .hero {
+  padding: 6rem 1.5rem 4.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 580px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 4rem 1.25rem 2.5rem;
-  max-width: $max-width;
-  margin: 0 auto;
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.4rem 0.9rem;
-  border-radius: $radius-pill;
-  background: $bg-glass;
-  border: 1px solid $border-highlight;
-  font-size: 0.8rem;
-  color: $text-secondary;
-  margin-bottom: 1.25rem;
-  backdrop-filter: blur(12px);
-}
-
-.flame {
-  color: #ff6b35;
 }
 
 .title {
-  font-size: clamp(2.1rem, 5vw, 3.25rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-  margin-bottom: 0.9rem;
-}
+  font-size: clamp(2.75rem, 6.5vw, 4.25rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: $text-primary;
+  margin-bottom: 1.25rem;
 
-.subtitle {
-  color: $text-secondary;
-  font-size: 1.05rem;
-  line-height: 1.5;
-  max-width: 500px;
-  margin-bottom: 2rem;
-
-  strong {
-    color: $text-primary;
-    font-weight: 600;
+  span {
+    color: $text-secondary;
+    font-weight: 700;
   }
 }
 
-.statsCard {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  width: 100%;
-  max-width: 440px;
-  padding: 1.25rem 1.5rem;
-  border-radius: $radius-lg;
-  background: $bg-glass;
-  border: 1px solid $border-subtle;
-  backdrop-filter: blur(16px);
-  margin-bottom: 1.75rem;
-}
-
-.statBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-}
-
-.statLabel {
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+.subtitle {
+  font-size: 1.05rem;
+  line-height: 1.55;
   color: $text-secondary;
-  margin-bottom: 0.35rem;
+  max-width: 440px;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.01em;
 }
 
-.statValue {
-  font-size: 1.9rem;
+.button {
+  width: 100%;
+  max-width: 340px;
+  height: 52px;
+  border-radius: $radius-pill;
+  background: $text-primary;
+  color: $bg-primary;
+  border: none;
+  font-size: 0.95rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
-  color: $text-primary;
-}
-
-.divider {
-  width: 1px;
-  height: 40px;
-  background: $border-subtle;
-}
-
-.ctaButton {
+  letter-spacing: -0.01em;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  width: 100%;
-  max-width: 360px;
-  padding: 1rem 1.75rem;
-  border-radius: $radius-pill;
-  border: none;
-  background: $accent-blue;
-  color: #fff;
-  font-size: 1.05rem;
-  font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 10px 30px rgba(0, 113, 227, 0.35);
-  transition: background 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.12);
 
   &:hover {
-    background: $accent-blue-hover;
+    opacity: 0.92;
   }
 }
